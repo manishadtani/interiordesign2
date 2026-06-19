@@ -25,41 +25,71 @@ const ScrollWalkthrough = () => {
   ];
 
   // Preload frames
+  const [frameIndices, setFrameIndices] = useState([]);
+
   useEffect(() => {
     if (typeof window === 'undefined') return;
+
+    const isMobileDevice = window.innerWidth < 768;
+    const step = isMobileDevice ? 4 : 1;
+    const indices = [];
+    for (let i = 0; i < totalFrames; i += step) {
+      indices.push(i);
+    }
+    if (indices[indices.length - 1] !== totalFrames - 1) {
+      indices.push(totalFrames - 1);
+    }
+    setFrameIndices(indices);
 
     let loadedCount = 0;
     const preloadedImages = [];
 
     const loadImages = async () => {
-      const promises = Array.from({ length: totalFrames }, (_, i) => {
-        return new Promise((resolve) => {
-          const img = new Image();
-          const frameNum = String(i).padStart(5, '0');
-          img.src = `/scroll/1st frame_${frameNum}.webp`;
-          
-          img.onload = () => {
-            preloadedImages[i] = img;
-            loadedCount++;
-            setLoadProgress(Math.round((loadedCount / totalFrames) * 100));
-            resolve(img);
-          };
+      const totalToLoad = indices.length;
+      const batchSize = 6; // Match browser max concurrent requests per domain
 
-          img.onerror = () => {
-            console.error(`Failed to load frame ${i}`);
-            loadedCount++;
-            setLoadProgress(Math.round((loadedCount / totalFrames) * 100));
-            resolve(null);
-          };
-        });
-      });
+      for (let i = 0; i < totalToLoad; i += batchSize) {
+        const batch = indices.slice(i, i + batchSize);
+        await Promise.all(batch.map((idx) => {
+          return new Promise((resolve) => {
+            const img = new Image();
+            const frameNum = String(idx).padStart(5, '0');
+            img.src = `/scroll/1st frame_${frameNum}.webp`;
+            
+            img.onload = () => {
+              preloadedImages[idx] = img;
+              loadedCount++;
+              setLoadProgress(Math.round((loadedCount / totalToLoad) * 100));
+              resolve(img);
+            };
 
-      await Promise.all(promises);
-      framesRef.current = preloadedImages.filter(Boolean);
+            img.onerror = () => {
+              console.error(`Failed to load frame ${idx}`);
+              loadedCount++;
+              setLoadProgress(Math.round((loadedCount / totalToLoad) * 100));
+              resolve(null);
+            };
+          });
+        }));
+      }
+
+      framesRef.current = preloadedImages;
       setIsReady(true);
     };
 
-    loadImages();
+    // Lazy load: Wait 1.5 seconds after page loads to prevent choking Hero/BeforeAfter assets
+    const startPreload = () => {
+      setTimeout(() => {
+        loadImages();
+      }, 1500);
+    };
+
+    if (document.readyState === 'complete') {
+      startPreload();
+    } else {
+      window.addEventListener('load', startPreload);
+      return () => window.removeEventListener('load', startPreload);
+    }
 
     return () => {
       if (requestRef.current) {
@@ -75,7 +105,18 @@ const ScrollWalkthrough = () => {
     if (lastFrameIndexRef.current === frameIndex) return;
     lastFrameIndexRef.current = frameIndex;
 
-    const img = framesRef.current[frameIndex];
+    let img = framesRef.current[frameIndex];
+    // Mobile fallback: Find the closest preloaded frame
+    if (!img) {
+      const loadedIndices = Object.keys(framesRef.current).map(Number);
+      if (loadedIndices.length > 0) {
+        const closestIndex = loadedIndices.reduce((prev, curr) => 
+          Math.abs(curr - frameIndex) < Math.abs(prev - frameIndex) ? curr : prev
+        );
+        img = framesRef.current[closestIndex];
+      }
+    }
+
     if (!img) return;
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -231,7 +272,7 @@ const ScrollWalkthrough = () => {
   return (
     <div 
       ref={triggerRef} 
-      className="relative w-full bg-[#FAF8F5] overflow-hidden h-[150vh] md:h-[220vh]"
+      className="relative w-full bg-[#FAF8F5] overflow-x-hidden h-[150vh] md:h-[220vh]"
     >
       <div
         ref={pinRef}

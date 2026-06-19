@@ -32,7 +32,7 @@ const CinematicHero = () => {
             start: 'top top',
             end: 'bottom top',
             scrub: true,
-            pin: true,
+            pin: !isMobile,
             anticipatePin: 1
           }
         });
