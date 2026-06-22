@@ -11,10 +11,10 @@ const Footer = () => {
            
            {/* Left Column: Heading */}
            <div className="max-w-xl">
-             <h2 className="font-lacroom text-[2.8rem] md:text-[3.5rem] lg:text-[4.2rem] text-[#111] mb-3 md:mb-5 leading-[1.05] tracking-tight uppercase">
+             <h2 className="font-display text-[2.8rem] md:text-[3.5rem] lg:text-[4.2rem] text-[#111] mb-3 md:mb-5 leading-[1.05] tracking-tight uppercase">
                Turning Concepts<br/>Into Landmarks.
              </h2>
-             <p className="font-urbanist text-[#999] font-light text-base md:text-[1.05rem] tracking-wide">
+             <p className="font-body text-[#999] font-light text-base md:text-[1.05rem] tracking-wide">
                Your <span className="text-[#b2000a] font-medium">dream space</span> is just a conversation away
              </p>
            </div>
@@ -24,8 +24,8 @@ const Footer = () => {
               
               {/* Contact Info */}
               <div>
-                <h4 className="font-urbanist font-semibold text-[#111] mb-3 text-[0.95rem]">Contact</h4>
-                <ul className="list-none p-0 m-0 flex flex-col gap-[0.35rem] font-urbanist text-[0.85rem] text-[#555] font-normal tracking-[0.02em]">
+                <h4 className="font-body font-semibold text-[#111] mb-3 text-[0.95rem]">Contact</h4>
+                <ul className="list-none p-0 m-0 flex flex-col gap-[0.35rem] font-body text-[0.85rem] text-[#555] font-normal tracking-[0.02em]">
                    <li>Marquis Living</li>
                    <li className="leading-relaxed">The V Building, Arjan,<br/>Dubai, UAE</li>
                    <li>xxxxxxxxx</li>
@@ -47,7 +47,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="text-center mb-10 md:mb-8">
-          <p className="font-urbanist text-[0.7rem] md:text-[0.75rem] text-[#a0a0a0] font-light tracking-[0.05em]">
+          <p className="font-body text-[0.7rem] md:text-[0.75rem] text-[#a0a0a0] font-light tracking-[0.05em]">
             Copyright © 2025 - All Rights Reserved By Marquis Living.
           </p>
         </div>
@@ -56,7 +56,7 @@ const Footer = () => {
       {/* Massive MARQUIS LIVING Bottom Text */}
       <div className="w-full flex justify-center overflow-hidden">
         <Link href="/" className="hover:opacity-85 transition-opacity duration-300" style={{ textDecoration: 'none', color: 'inherit' }}>
-          <h1 className="font-lacroom font-normal text-[14.3vw] leading-none m-0 -mb-[3.5vw] whitespace-nowrap tracking-tight text-[#111] select-none cursor-pointer">
+          <h1 className="font-display font-normal text-[14.3vw] leading-none m-0 -mb-[3.5vw] whitespace-nowrap tracking-tight text-[#111] select-none cursor-pointer">
             MARQUIS LIVING
           </h1>
         </Link>

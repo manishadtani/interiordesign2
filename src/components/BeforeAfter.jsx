@@ -145,7 +145,7 @@ const BeforeAfter = ({
             pointerEvents: 'none',
           }}>
             <h2 
-              className="font-lacroom"
+              className="font-display"
               style={{
                 fontSize: 'clamp(2.5rem, 9vw, 8rem)',
                 color: '#ffffff',

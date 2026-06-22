@@ -212,25 +212,25 @@ export default function ContactPage() {
           
           {/* Left Column: Studio Details & Stylized Map */}
           <div className="flex flex-col justify-start">
-            <span className="reveal-el font-urbanist text-[0.8rem] font-bold text-[#b2000a] tracking-[0.2em] uppercase mb-4 inline-block">
+            <span className="reveal-el font-body text-[0.8rem] font-bold text-[#b2000a] tracking-[0.2em] uppercase mb-4 inline-block">
               Get in Touch
             </span>
-            <h1 className="reveal-el font-lacroom text-[2.8rem] md:text-[4.5rem] text-[#2b2b2b] leading-[1.1] mb-8 uppercase">
+            <h1 className="reveal-el font-display text-[2.8rem] md:text-[4.5rem] text-[#2b2b2b] leading-[1.1] mb-8 uppercase">
               Let's Build<br />Your <span className="text-[#b2000a]">Legacy</span>
             </h1>
 
             <div className="reveal-el grid grid-cols-1 md:grid-cols-2 gap-8 border-t border-[#e2d8d8ff] pt-8 mb-12">
               <div>
-                <h4 className="font-urbanist font-bold text-xs uppercase tracking-wider text-[#8b8b8b] mb-2">Location</h4>
-                <p className="font-urbanist text-sm text-[#2b2b2b] leading-relaxed">
+                <h4 className="font-body font-bold text-xs uppercase tracking-wider text-[#8b8b8b] mb-2">Location</h4>
+                <p className="font-body text-sm text-[#2b2b2b] leading-relaxed">
                   Marquis Living<br />
                   The V Building, Arjan,<br />
                   Dubai, UAE
                 </p>
               </div>
               <div>
-                <h4 className="font-urbanist font-bold text-xs uppercase tracking-wider text-[#8b8b8b] mb-2">Direct Contact</h4>
-                <p className="font-urbanist text-sm text-[#2b2b2b] leading-relaxed">
+                <h4 className="font-body font-bold text-xs uppercase tracking-wider text-[#8b8b8b] mb-2">Direct Contact</h4>
+                <p className="font-body text-sm text-[#2b2b2b] leading-relaxed">
                   Phone: xxxxxxxxx<br />
                   Email: Info@Marquisliving.ae
                 </p>
@@ -254,7 +254,7 @@ export default function ContactPage() {
               <div className="absolute w-[120px] h-[120px] border border-white/5 rounded-full animate-ping" style={{ animationDuration: '3s' }} />
               
               {/* Map Title overlay */}
-              <div className="absolute top-6 left-8 font-lacroom text-xs tracking-widest text-[#a1a1aa] uppercase">
+              <div className="absolute top-6 left-8 font-display text-xs tracking-widest text-[#a1a1aa] uppercase">
                 Arjan, Dubai HQ
               </div>
 
@@ -266,7 +266,7 @@ export default function ContactPage() {
               </div>
 
               {/* Coordinates info */}
-              <div className="absolute bottom-6 right-8 font-urbanist text-[0.65rem] tracking-wider text-[#6b6b6b]">
+              <div className="absolute bottom-6 right-8 font-body text-[0.65rem] tracking-wider text-[#6b6b6b]">
                 25.0568° N, 55.2443° E
               </div>
             </div>
@@ -275,7 +275,7 @@ export default function ContactPage() {
 
           {/* Right Column: Contact Form */}
           <div className="reveal-el w-full bg-white border border-[#e2d8d8ff] rounded-[2.5rem] p-8 md:p-12 shadow-sm">
-            <h3 className="font-lacroom text-[1.8rem] md:text-[2.2rem] text-[#2b2b2b] mb-8 uppercase text-center md:text-left">
+            <h3 className="font-display text-[1.8rem] md:text-[2.2rem] text-[#2b2b2b] mb-8 uppercase text-center md:text-left">
               Send a Query
             </h3>
 
@@ -290,7 +290,7 @@ export default function ContactPage() {
                   placeholder="Name*" 
                   value={formData.name} 
                   onChange={handleChange} 
-                  className="w-full border-b border-[#dcdcdc] focus:border-[#b2000a] py-3 font-urbanist text-sm text-[#2b2b2b] bg-transparent outline-none transition-colors duration-300"
+                  className="w-full border-b border-[#dcdcdc] focus:border-[#b2000a] py-3 font-body text-sm text-[#2b2b2b] bg-transparent outline-none transition-colors duration-300"
                 />
                 {errors.name && <span className="absolute bottom-[-16px] left-0 text-[0.65rem] text-[#ff4d4d] font-semibold">{errors.name}</span>}
               </div>
@@ -302,7 +302,7 @@ export default function ContactPage() {
                   placeholder="Phone No.*" 
                   value={formData.phone} 
                   onChange={handleChange} 
-                  className="w-full border-b border-[#dcdcdc] focus:border-[#b2000a] py-3 font-urbanist text-sm text-[#2b2b2b] bg-transparent outline-none transition-colors duration-300"
+                  className="w-full border-b border-[#dcdcdc] focus:border-[#b2000a] py-3 font-body text-sm text-[#2b2b2b] bg-transparent outline-none transition-colors duration-300"
                 />
                 {errors.phone && <span className="absolute bottom-[-16px] left-0 text-[0.65rem] text-[#ff4d4d] font-semibold">{errors.phone}</span>}
               </div>
@@ -314,7 +314,7 @@ export default function ContactPage() {
                   placeholder="Email*" 
                   value={formData.email} 
                   onChange={handleChange} 
-                  className="w-full border-b border-[#dcdcdc] focus:border-[#b2000a] py-3 font-urbanist text-sm text-[#2b2b2b] bg-transparent outline-none transition-colors duration-300"
+                  className="w-full border-b border-[#dcdcdc] focus:border-[#b2000a] py-3 font-body text-sm text-[#2b2b2b] bg-transparent outline-none transition-colors duration-300"
                 />
                 {errors.email && <span className="absolute bottom-[-16px] left-0 text-[0.65rem] text-[#ff4d4d] font-semibold">{errors.email}</span>}
               </div>
@@ -326,7 +326,7 @@ export default function ContactPage() {
                   placeholder="City*" 
                   value={formData.city} 
                   onChange={handleChange} 
-                  className="w-full border-b border-[#dcdcdc] focus:border-[#b2000a] py-3 font-urbanist text-sm text-[#2b2b2b] bg-transparent outline-none transition-colors duration-300"
+                  className="w-full border-b border-[#dcdcdc] focus:border-[#b2000a] py-3 font-body text-sm text-[#2b2b2b] bg-transparent outline-none transition-colors duration-300"
                 />
                 {errors.city && <span className="absolute bottom-[-16px] left-0 text-[0.65rem] text-[#ff4d4d] font-semibold">{errors.city}</span>}
               </div>
@@ -338,7 +338,7 @@ export default function ContactPage() {
                   value={formData.description} 
                   onChange={handleChange} 
                   rows="4"
-                  className="w-full border-b border-[#dcdcdc] focus:border-[#b2000a] py-3 font-urbanist text-sm text-[#2b2b2b] bg-transparent outline-none transition-colors duration-300 resize-none"
+                  className="w-full border-b border-[#dcdcdc] focus:border-[#b2000a] py-3 font-body text-sm text-[#2b2b2b] bg-transparent outline-none transition-colors duration-300 resize-none"
                 />
                 {errors.description && <span className="absolute bottom-[-16px] left-0 text-[0.65rem] text-[#ff4d4d] font-semibold">{errors.description}</span>}
               </div>
@@ -355,7 +355,7 @@ export default function ContactPage() {
                     color: '#FFFFFF',
                     borderRadius: '50px',
                     border: 'none',
-                    fontFamily: "'Urbanist', sans-serif",
+                    fontFamily: "'Tenor Sans', sans-serif",
                     fontSize: '0.85rem',
                     fontWeight: 600,
                     letterSpacing: '0.08em',

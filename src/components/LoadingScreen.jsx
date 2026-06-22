@@ -37,7 +37,7 @@ const LoadingScreen = ({ isLoading, progress = 0 }) => {
     >
       {/* Logo Container */}
       <div
-        className="font-lacroom"
+        className="font-display"
         style={{
           marginBottom: '2rem',
           animation: 'float 3s ease-in-out infinite',

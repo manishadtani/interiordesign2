@@ -206,11 +206,11 @@ export default function AboutPage() {
         </div>
 
         <div className="w-full md:w-1/2 px-6 md:px-16 flex flex-col justify-center text-center md:text-left">
-          <span className="hero-reveal font-urbanist text-[0.8rem] font-bold text-[#b2000a] tracking-[0.2em] uppercase mb-4 inline-block">
+          <span className="hero-reveal font-body text-[0.8rem] font-bold text-[#b2000a] tracking-[0.2em] uppercase mb-4 inline-block">
             Our Heritage
           </span>
           <h1 
-            className="hero-reveal font-lacroom text-[#2b2b2b] font-light leading-[1.05] tracking-tight mb-6 uppercase"
+            className="hero-reveal font-display text-[#2b2b2b] font-light leading-[1.05] tracking-tight mb-6 uppercase"
             style={{ fontSize: 'clamp(2.8rem, 6vw, 5.2rem)' }}
           >
             CRAFTERS OF<br />
@@ -218,7 +218,7 @@ export default function AboutPage() {
             SPACES
           </h1>
           <p 
-            className="hero-reveal font-urbanist text-[#6b6b6b] leading-relaxed font-light mb-8 max-w-[500px] mx-auto md:mx-0"
+            className="hero-reveal font-body text-[#6b6b6b] leading-relaxed font-light mb-8 max-w-[500px] mx-auto md:mx-0"
             style={{ fontSize: 'clamp(1rem, 1.8vw, 1.15rem)' }}
           >
             Marquis Living sets the benchmark for ultra-luxury residential and commercial fit-out services in Dubai. 
@@ -232,10 +232,10 @@ export default function AboutPage() {
         <div className="max-w-[1400px] w-full mx-auto px-6 md:px-12">
           
           <div className="text-center mb-16 md:mb-24">
-            <span className="font-urbanist text-[0.8rem] font-bold text-[#b2000a] tracking-[0.2em] uppercase border-b border-[#e2d8d8ff] pb-1">
+            <span className="font-body text-[0.8rem] font-bold text-[#b2000a] tracking-[0.2em] uppercase border-b border-[#e2d8d8ff] pb-1">
               Manifesto
             </span>
-            <h2 className="font-lacroom text-[2rem] md:text-[3.5rem] text-[#2b2b2b] mt-4 uppercase">
+            <h2 className="font-display text-[2rem] md:text-[3.5rem] text-[#2b2b2b] mt-4 uppercase">
               Our Core Pillars
             </h2>
           </div>
@@ -244,39 +244,39 @@ export default function AboutPage() {
             
             {/* Pillar 01 */}
             <div className="manifesto-card bg-white p-8 md:p-12 rounded-[2rem] border border-[#e2d8d8ff] hover:border-[#b2000a] transition-all duration-500 shadow-sm hover:shadow-xl group">
-              <h3 className="font-lacroom text-[3.5rem] text-[#b2000a] group-hover:scale-105 transition-transform duration-300">
+              <h3 className="font-display text-[3.5rem] text-[#b2000a] group-hover:scale-105 transition-transform duration-300">
                 01
               </h3>
-              <h4 className="font-lacroom text-[1.6rem] text-[#2b2b2b] mt-4 mb-3 uppercase">
+              <h4 className="font-display text-[1.6rem] text-[#2b2b2b] mt-4 mb-3 uppercase">
                 Uncompromising Detail
               </h4>
-              <p className="font-urbanist text-[#6b6b6b] leading-relaxed font-light text-[0.95rem]">
+              <p className="font-body text-[#6b6b6b] leading-relaxed font-light text-[0.95rem]">
                 From bespoke joinery lines to hidden accent lighting pockets, we believe that real luxury resides in the details that most overlook.
               </p>
             </div>
 
             {/* Pillar 02 */}
             <div className="manifesto-card bg-white p-8 md:p-12 rounded-[2rem] border border-[#e2d8d8ff] hover:border-[#b2000a] transition-all duration-500 shadow-sm hover:shadow-xl group">
-              <h3 className="font-lacroom text-[3.5rem] text-[#b2000a] group-hover:scale-105 transition-transform duration-300">
+              <h3 className="font-display text-[3.5rem] text-[#b2000a] group-hover:scale-105 transition-transform duration-300">
                 02
               </h3>
-              <h4 className="font-lacroom text-[1.6rem] text-[#2b2b2b] mt-4 mb-3 uppercase">
+              <h4 className="font-display text-[1.6rem] text-[#2b2b2b] mt-4 mb-3 uppercase">
                 Material Authenticity
               </h4>
-              <p className="font-urbanist text-[#6b6b6b] leading-relaxed font-light text-[0.95rem]">
+              <p className="font-body text-[#6b6b6b] leading-relaxed font-light text-[0.95rem]">
                 We select materials that mature beautifully over time—Carrara Marble, Brushed Brass, and solid European Walnut wood, handled with absolute respect.
               </p>
             </div>
 
             {/* Pillar 03 */}
             <div className="manifesto-card bg-white p-8 md:p-12 rounded-[2rem] border border-[#e2d8d8ff] hover:border-[#b2000a] transition-all duration-500 shadow-sm hover:shadow-xl group">
-              <h3 className="font-lacroom text-[3.5rem] text-[#b2000a] group-hover:scale-105 transition-transform duration-300">
+              <h3 className="font-display text-[3.5rem] text-[#b2000a] group-hover:scale-105 transition-transform duration-300">
                 03
               </h3>
-              <h4 className="font-lacroom text-[1.6rem] text-[#2b2b2b] mt-4 mb-3 uppercase">
+              <h4 className="font-display text-[1.6rem] text-[#2b2b2b] mt-4 mb-3 uppercase">
                 Spatial Harmony
               </h4>
-              <p className="font-urbanist text-[#6b6b6b] leading-relaxed font-light text-[0.95rem]">
+              <p className="font-body text-[#6b6b6b] leading-relaxed font-light text-[0.95rem]">
                 We frame voids, direct natural sun rays, and shape architectural scale to construct spaces that feel spacious, welcoming, and balanced.
               </p>
             </div>
@@ -289,14 +289,14 @@ export default function AboutPage() {
       {/* ── SECTION 3: The Statement Quote (Minimalist & High Contrast) ── */}
       <section className="w-full bg-[#8B0012] py-24 md:py-40 text-center relative z-20">
         <div className="max-w-[1000px] w-full mx-auto px-6 quote-banner">
-          <span className="font-urbanist text-[0.8rem] font-bold text-white/70 tracking-[0.2em] uppercase mb-6 inline-block">
+          <span className="font-body text-[0.8rem] font-bold text-white/70 tracking-[0.2em] uppercase mb-6 inline-block">
             Our Creed
           </span>
-          <h2 className="font-lacroom text-white font-light leading-[1.2] mb-8" style={{ fontSize: 'clamp(1.8rem, 4.5vw, 3.8rem)' }}>
+          <h2 className="font-display text-white font-light leading-[1.2] mb-8" style={{ fontSize: 'clamp(1.8rem, 4.5vw, 3.8rem)' }}>
             "We don't build layouts.<br />
             We shape spatial <span className="text-[#FAF8F5] italic">emotions</span>."
           </h2>
-          <p className="font-urbanist text-[#a1a1aa] uppercase tracking-[0.2em] text-[0.8rem] font-semibold">
+          <p className="font-body text-[#a1a1aa] uppercase tracking-[0.2em] text-[0.8rem] font-semibold">
             — Marquis Living Dubai
           </p>
         </div>
@@ -305,7 +305,7 @@ export default function AboutPage() {
       {/* ── SECTION 4: Interactive CTA Button ── */}
       <section className="w-full py-16 md:py-28 bg-[#FAF8F5] text-center">
         <div className="max-w-xl mx-auto px-6">
-          <h3 className="font-lacroom text-[1.8rem] md:text-[2.6rem] text-[#2b2b2b] mb-8 uppercase">
+          <h3 className="font-display text-[1.8rem] md:text-[2.6rem] text-[#2b2b2b] mb-8 uppercase">
             Let's Shape Your Vision
           </h3>
           
@@ -317,7 +317,7 @@ export default function AboutPage() {
               color: '#FFFFFF',
               borderRadius: '50px',
               border: 'none',
-              fontFamily: "'Urbanist', sans-serif",
+              fontFamily: "'Tenor Sans', sans-serif",
               fontSize: '0.9rem',
               fontWeight: 600,
               letterSpacing: '0.08em',

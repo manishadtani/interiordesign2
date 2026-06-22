@@ -164,7 +164,7 @@ const ContactForm = () => {
 
       <div ref={formBoxRef} style={formBoxStyle}>
         <h2 
-          className="font-lacroom"
+          className="font-display"
           style={{ 
             fontWeight: 400, 
             color: '#2b2b2b', 
@@ -205,7 +205,7 @@ const ContactForm = () => {
 
           <div style={{ gridColumn: '1 / -1', display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '1.5rem' }}>
             {errors.submit && <p style={{ color: '#ff4d4d', fontSize: '0.8rem', marginBottom: '8px' }}>{errors.submit}</p>}
-            <button type="submit" disabled={isSending} style={submitBtnStyle} className="group font-urbanist">
+            <button type="submit" disabled={isSending} style={submitBtnStyle} className="group font-body">
               {isSending ? 'Sending...' : 'Submit'}
               <div style={underlineStyle} className="group-hover:scale-x-110" />
             </button>
@@ -214,7 +214,7 @@ const ContactForm = () => {
       </div>
 
       <div ref={labelRef} style={labelContainerStyle}>
-        <span style={labelTextStyle} className="font-urbanist">Scroll to explore</span>
+        <span style={labelTextStyle} className="font-body">Scroll to explore</span>
         <div style={{ width: '1px', height: '40px', backgroundColor: 'rgba(255,255,255,0.6)' }} />
       </div>
     </section>

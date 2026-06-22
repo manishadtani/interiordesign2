@@ -308,7 +308,7 @@ export default function ProjectsPage() {
         style={{ transform: 'translate(-50%, -50%)', transition: 'width 0.2s, height 0.2s, background-color 0.2s' }}
       >
         <span 
-          className="font-urbanist text-[8px] font-extrabold text-[#b2000a] tracking-widest transition-opacity duration-200"
+          className="font-body text-[8px] font-extrabold text-[#b2000a] tracking-widest transition-opacity duration-200"
           style={{ opacity: cursorCardHovered ? 1 : 0 }}
         >
           VIEW
@@ -343,18 +343,18 @@ export default function ProjectsPage() {
         className="w-full flex flex-col justify-center items-center text-center px-6 bg-[#FAF8F5]"
         style={{ minHeight: '65vh', paddingTop: '160px', paddingBottom: '3rem' }}
       >
-        <span className="project-hero-reveal font-urbanist text-[0.8rem] font-bold text-[#b2000a] tracking-[0.2em] uppercase mb-4 inline-block">
+        <span className="project-hero-reveal font-body text-[0.8rem] font-bold text-[#b2000a] tracking-[0.2em] uppercase mb-4 inline-block">
           Selected Portfolio
         </span>
         <h1 
-          className="project-hero-reveal font-lacroom text-[#2b2b2b] font-light leading-[1.05] tracking-tight mb-6 uppercase"
+          className="project-hero-reveal font-display text-[#2b2b2b] font-light leading-[1.05] tracking-tight mb-6 uppercase"
           style={{ fontSize: 'clamp(2.8rem, 6.5vw, 5.8rem)' }}
         >
           ARCHITECTURAL<br />
           <span className="text-[#b2000a]">LEGACIES</span>
         </h1>
         <p 
-          className="project-hero-reveal font-urbanist text-[#6b6b6b] leading-relaxed font-light max-w-[600px] mx-auto mb-10"
+          className="project-hero-reveal font-body text-[#6b6b6b] leading-relaxed font-light max-w-[600px] mx-auto mb-10"
           style={{ fontSize: 'clamp(0.95rem, 1.8vw, 1.15rem)' }}
         >
           A curation of our finest residential fit-outs, luxury penthouses, and bespoke villas across Dubai's most prestigious districts.
@@ -366,7 +366,7 @@ export default function ProjectsPage() {
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
-              className="filter-btn font-urbanist text-xs tracking-wider uppercase font-semibold border rounded-full transition-all duration-300"
+              className="filter-btn font-body text-xs tracking-wider uppercase font-semibold border rounded-full transition-all duration-300"
               style={{
                 padding: '0.6rem 1.8rem',
                 backgroundColor: activeCategory === cat ? '#b2000a' : 'transparent',
@@ -410,12 +410,12 @@ export default function ProjectsPage() {
                     {/* Floating Info on Hover */}
                     <div className="absolute bottom-8 left-8 right-8 text-white opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 flex justify-between items-end">
                       <div>
-                        <span className="font-urbanist text-[0.65rem] tracking-[0.2em] font-semibold text-[#b2000a] bg-white/95 px-3 py-1 rounded-full uppercase mb-2 inline-block">
+                        <span className="font-body text-[0.65rem] tracking-[0.2em] font-semibold text-[#b2000a] bg-white/95 px-3 py-1 rounded-full uppercase mb-2 inline-block">
                           {project.category}
                         </span>
-                        <h3 className="font-lacroom text-xl leading-snug">{project.title}</h3>
+                        <h3 className="font-display text-xl leading-snug">{project.title}</h3>
                       </div>
-                      <span className="font-urbanist text-xs tracking-wider text-white/80">
+                      <span className="font-body text-xs tracking-wider text-white/80">
                         📍 {project.location}
                       </span>
                     </div>
@@ -424,10 +424,10 @@ export default function ProjectsPage() {
                   {/* Standard Static Info beneath (Visible when not hovered or on mobile) */}
                   <div className="mt-6 flex justify-between items-start px-2 group-hover:opacity-50 transition-opacity duration-300">
                     <div>
-                      <h3 className="font-lacroom text-lg text-[#2b2b2b] uppercase tracking-wide">{project.title}</h3>
-                      <p className="font-urbanist text-xs text-[#8b8b8b] mt-1">📍 {project.location}</p>
+                      <h3 className="font-display text-lg text-[#2b2b2b] uppercase tracking-wide">{project.title}</h3>
+                      <p className="font-body text-xs text-[#8b8b8b] mt-1">📍 {project.location}</p>
                     </div>
-                    <span className="font-urbanist text-[0.7rem] uppercase tracking-wider text-[#b2000a] font-bold border-b border-transparent group-hover:border-[#b2000a] transition-all">
+                    <span className="font-body text-[0.7rem] uppercase tracking-wider text-[#b2000a] font-bold border-b border-transparent group-hover:border-[#b2000a] transition-all">
                       Explore Design →
                     </span>
                   </div>
@@ -438,7 +438,7 @@ export default function ProjectsPage() {
 
           {filteredProjects.length === 0 && (
             <div className="text-center py-24">
-              <p className="font-urbanist text-sm text-[#8b8b8b]">No projects found in this category.</p>
+              <p className="font-body text-sm text-[#8b8b8b]">No projects found in this category.</p>
             </div>
           )}
         </div>
@@ -475,18 +475,18 @@ export default function ProjectsPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
               <div className="absolute bottom-6 left-8 text-white">
-                <span className="font-urbanist text-[0.65rem] tracking-[0.2em] font-semibold text-white bg-[#b2000a] px-3.5 py-1.5 rounded-full uppercase mb-2 inline-block">
+                <span className="font-body text-[0.65rem] tracking-[0.2em] font-semibold text-white bg-[#b2000a] px-3.5 py-1.5 rounded-full uppercase mb-2 inline-block">
                   {selectedProject.category}
                 </span>
-                <h2 className="font-lacroom text-2xl md:text-3xl leading-snug uppercase">{selectedProject.title}</h2>
+                <h2 className="font-display text-2xl md:text-3xl leading-snug uppercase">{selectedProject.title}</h2>
               </div>
             </div>
 
             {/* Modal Content */}
             <div className="p-8 md:p-12 flex flex-col md:flex-row gap-8 md:gap-12">
               <div className="w-full md:w-3/5">
-                <h4 className="font-urbanist font-bold text-xs uppercase tracking-wider text-[#b2000a] mb-3">Project Narrative</h4>
-                <p className="font-urbanist text-[#6b6b6b] leading-relaxed font-light text-sm md:text-base">
+                <h4 className="font-body font-bold text-xs uppercase tracking-wider text-[#b2000a] mb-3">Project Narrative</h4>
+                <p className="font-body text-[#6b6b6b] leading-relaxed font-light text-sm md:text-base">
                   {selectedProject.desc}
                 </p>
               </div>
@@ -494,21 +494,21 @@ export default function ProjectsPage() {
               {/* Specifications Column */}
               <div className="w-full md:w-2/5 flex flex-col gap-4 border-t md:border-t-0 md:border-l border-[#e2d8d8ff] pt-6 md:pt-0 md:pl-8">
                 <div>
-                  <h5 className="font-urbanist font-bold text-[0.65rem] uppercase tracking-wider text-[#8b8b8b]">Location</h5>
-                  <p className="font-urbanist text-sm font-semibold text-[#2b2b2b] mt-0.5">{selectedProject.location}</p>
+                  <h5 className="font-body font-bold text-[0.65rem] uppercase tracking-wider text-[#8b8b8b]">Location</h5>
+                  <p className="font-body text-sm font-semibold text-[#2b2b2b] mt-0.5">{selectedProject.location}</p>
                 </div>
                 <div>
-                  <h5 className="font-urbanist font-bold text-[0.65rem] uppercase tracking-wider text-[#8b8b8b]">Service Scope</h5>
-                  <p className="font-urbanist text-sm font-semibold text-[#2b2b2b] mt-0.5">{selectedProject.type}</p>
+                  <h5 className="font-body font-bold text-[0.65rem] uppercase tracking-wider text-[#8b8b8b]">Service Scope</h5>
+                  <p className="font-body text-sm font-semibold text-[#2b2b2b] mt-0.5">{selectedProject.type}</p>
                 </div>
                 <div className="grid grid-cols-2 gap-4">
                   <div>
-                    <h5 className="font-urbanist font-bold text-[0.65rem] uppercase tracking-wider text-[#8b8b8b]">Area</h5>
-                    <p className="font-urbanist text-sm font-semibold text-[#2b2b2b] mt-0.5">{selectedProject.area}</p>
+                    <h5 className="font-body font-bold text-[0.65rem] uppercase tracking-wider text-[#8b8b8b]">Area</h5>
+                    <p className="font-body text-sm font-semibold text-[#2b2b2b] mt-0.5">{selectedProject.area}</p>
                   </div>
                   <div>
-                    <h5 className="font-urbanist font-bold text-[0.65rem] uppercase tracking-wider text-[#8b8b8b]">Completed</h5>
-                    <p className="font-urbanist text-sm font-semibold text-[#2b2b2b] mt-0.5">{selectedProject.year}</p>
+                    <h5 className="font-body font-bold text-[0.65rem] uppercase tracking-wider text-[#8b8b8b]">Completed</h5>
+                    <p className="font-body text-sm font-semibold text-[#2b2b2b] mt-0.5">{selectedProject.year}</p>
                   </div>
                 </div>
               </div>
@@ -516,10 +516,10 @@ export default function ProjectsPage() {
 
             {/* Modal Footer CTA */}
             <div className="px-8 pb-8 md:px-12 md:pb-12 text-center md:text-left border-t border-[#e2d8d8ff] pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
-              <span className="font-urbanist text-xs text-[#8b8b8b]">Interested in similar bespoke setups?</span>
+              <span className="font-body text-xs text-[#8b8b8b]">Interested in similar bespoke setups?</span>
               <Link 
                 href="/contact"
-                className="font-urbanist text-xs uppercase font-bold text-white bg-[#b2000a] hover:bg-[#C7000B] px-6 py-3 rounded-full transition-colors tracking-wider"
+                className="font-body text-xs uppercase font-bold text-white bg-[#b2000a] hover:bg-[#C7000B] px-6 py-3 rounded-full transition-colors tracking-wider"
               >
                 Inquire For Details
               </Link>

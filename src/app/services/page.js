@@ -206,18 +206,18 @@ export default function ServicesPage() {
         </div>
 
         <div className="w-full md:w-1/2 px-6 md:px-16 flex flex-col justify-center text-center md:text-left">
-          <span className="hero-reveal-el font-urbanist text-[0.8rem] font-bold text-[#b2000a] tracking-[0.2em] uppercase mb-4 inline-block">
+          <span className="hero-reveal-el font-body text-[0.8rem] font-bold text-[#b2000a] tracking-[0.2em] uppercase mb-4 inline-block">
             What We Do
           </span>
           <h1 
-            className="hero-reveal-el font-lacroom text-[#2b2b2b] font-light leading-[1.05] tracking-tight mb-6 uppercase"
+            className="hero-reveal-el font-display text-[#2b2b2b] font-light leading-[1.05] tracking-tight mb-6 uppercase"
             style={{ fontSize: 'clamp(2.8rem, 6vw, 5.2rem)' }}
           >
             SERVICES &<br />
             <span className="text-[#b2000a]">CAPABILITIES</span>
           </h1>
           <p 
-            className="hero-reveal-el font-urbanist text-[#6b6b6b] leading-relaxed font-light mb-8 max-w-[500px] mx-auto md:mx-0"
+            className="hero-reveal-el font-body text-[#6b6b6b] leading-relaxed font-light mb-8 max-w-[500px] mx-auto md:mx-0"
             style={{ fontSize: 'clamp(1rem, 1.8vw, 1.15rem)' }}
           >
             Providing end-to-end interior design and fit-out execution in Dubai. 
@@ -231,10 +231,10 @@ export default function ServicesPage() {
         <div className="max-w-[1400px] w-full mx-auto px-6 md:px-12">
           
           <div className="text-center mb-16 md:mb-24">
-            <span className="font-urbanist text-[0.8rem] font-bold text-[#b2000a] tracking-[0.2em] uppercase border-b border-[#e2d8d8ff] pb-1">
+            <span className="font-body text-[0.8rem] font-bold text-[#b2000a] tracking-[0.2em] uppercase border-b border-[#e2d8d8ff] pb-1">
               Expertise
             </span>
-            <h2 className="font-lacroom text-[2rem] md:text-[3.5rem] text-[#2b2b2b] mt-4 uppercase">
+            <h2 className="font-display text-[2rem] md:text-[3.5rem] text-[#2b2b2b] mt-4 uppercase">
               Our Capabilities
             </h2>
           </div>
@@ -243,16 +243,16 @@ export default function ServicesPage() {
             
             {/* Capability 01 */}
             <div className="service-detail-card bg-[#FAF8F5] p-8 md:p-12 rounded-[2rem] border border-[#e2d8d8ff] hover:border-[#b2000a] transition-all duration-500 shadow-sm hover:shadow-xl group relative overflow-hidden">
-              <span className="font-lacroom text-[3.5rem] text-[#b2000a]/20 group-hover:text-[#b2000a] transition-colors duration-300">
+              <span className="font-display text-[3.5rem] text-[#b2000a]/20 group-hover:text-[#b2000a] transition-colors duration-300">
                 01
               </span>
-              <h3 className="font-lacroom text-[1.5rem] text-[#2b2b2b] mt-4 mb-4 uppercase">
+              <h3 className="font-display text-[1.5rem] text-[#2b2b2b] mt-4 mb-4 uppercase">
                 Spatial Architecture
               </h3>
-              <p className="font-urbanist text-[#6b6b6b] leading-relaxed font-light text-[0.95rem] mb-6">
+              <p className="font-body text-[#6b6b6b] leading-relaxed font-light text-[0.95rem] mb-6">
                 Creating optimized blueprints, space allocations, and wall structures to direct flow and maximize volume.
               </p>
-              <ul className="font-urbanist text-xs text-[#8b8b8b] flex flex-col gap-2 border-t border-[#e2d8d8ff] pt-4">
+              <ul className="font-body text-xs text-[#8b8b8b] flex flex-col gap-2 border-t border-[#e2d8d8ff] pt-4">
                 <li>✦ Space Planning & Layout Drafts</li>
                 <li>✦ 3D Rendering & Visualizations</li>
                 <li>✦ Structural Wall Modifications</li>
@@ -261,16 +261,16 @@ export default function ServicesPage() {
 
             {/* Capability 02 */}
             <div className="service-detail-card bg-[#FAF8F5] p-8 md:p-12 rounded-[2rem] border border-[#e2d8d8ff] hover:border-[#b2000a] transition-all duration-500 shadow-sm hover:shadow-xl group relative overflow-hidden">
-              <span className="font-lacroom text-[3.5rem] text-[#b2000a]/20 group-hover:text-[#b2000a] transition-colors duration-300">
+              <span className="font-display text-[3.5rem] text-[#b2000a]/20 group-hover:text-[#b2000a] transition-colors duration-300">
                 02
               </span>
-              <h3 className="font-lacroom text-[1.5rem] text-[#2b2b2b] mt-4 mb-4 uppercase">
+              <h3 className="font-display text-[1.5rem] text-[#2b2b2b] mt-4 mb-4 uppercase">
                 Interior Curation
               </h3>
-              <p className="font-urbanist text-[#6b6b6b] leading-relaxed font-light text-[0.95rem] mb-6">
+              <p className="font-body text-[#6b6b6b] leading-relaxed font-light text-[0.95rem] mb-6">
                 Sourcing genuine construction assets—Italian marble slabs, bespoke walnut joinery fittings, and custom luxury textiles.
               </p>
-              <ul className="font-urbanist text-xs text-[#8b8b8b] flex flex-col gap-2 border-t border-[#e2d8d8ff] pt-4">
+              <ul className="font-body text-xs text-[#8b8b8b] flex flex-col gap-2 border-t border-[#e2d8d8ff] pt-4">
                 <li>✦ High-end Material Selection</li>
                 <li>✦ Custom Furniture & Lighting sourcing</li>
                 <li>✦ Color Coordination & Styling</li>
@@ -279,16 +279,16 @@ export default function ServicesPage() {
 
             {/* Capability 03 */}
             <div className="service-detail-card bg-[#FAF8F5] p-8 md:p-12 rounded-[2rem] border border-[#e2d8d8ff] hover:border-[#b2000a] transition-all duration-500 shadow-sm hover:shadow-xl group relative overflow-hidden">
-              <span className="font-lacroom text-[3.5rem] text-[#b2000a]/20 group-hover:text-[#b2000a] transition-colors duration-300">
+              <span className="font-display text-[3.5rem] text-[#b2000a]/20 group-hover:text-[#b2000a] transition-colors duration-300">
                 03
               </span>
-              <h3 className="font-lacroom text-[1.5rem] text-[#2b2b2b] mt-4 mb-4 uppercase">
+              <h3 className="font-display text-[1.5rem] text-[#2b2b2b] mt-4 mb-4 uppercase">
                 Turnkey Fit-Out
               </h3>
-              <p className="font-urbanist text-[#6b6b6b] leading-relaxed font-light text-[0.95rem] mb-6">
+              <p className="font-body text-[#6b6b6b] leading-relaxed font-light text-[0.95rem] mb-6">
                 Managing complete construction, MEP (mechanical/electrical/plumbing), HVAC work, and municipality clearances.
               </p>
-              <ul className="font-urbanist text-xs text-[#8b8b8b] flex flex-col gap-2 border-t border-[#e2d8d8ff] pt-4">
+              <ul className="font-body text-xs text-[#8b8b8b] flex flex-col gap-2 border-t border-[#e2d8d8ff] pt-4">
                 <li>✦ Civil Construction & MEP Works</li>
                 <li>✦ Government Authority Approvals</li>
                 <li>✦ Project Handover & Styling Setup</li>
@@ -305,10 +305,10 @@ export default function ServicesPage() {
         <div className="max-w-[1200px] w-full mx-auto px-6 md:px-12">
           
           <div className="text-center mb-16 md:mb-24">
-            <span className="font-urbanist text-[0.8rem] font-bold text-[#b2000a] tracking-[0.2em] uppercase border-b border-[#e2d8d8ff] pb-1">
+            <span className="font-body text-[0.8rem] font-bold text-[#b2000a] tracking-[0.2em] uppercase border-b border-[#e2d8d8ff] pb-1">
               Methodology
             </span>
-            <h2 className="font-lacroom text-[2rem] md:text-[3.5rem] text-[#2b2b2b] mt-4 uppercase">
+            <h2 className="font-display text-[2rem] md:text-[3.5rem] text-[#2b2b2b] mt-4 uppercase">
               Our Process
             </h2>
           </div>
@@ -318,9 +318,9 @@ export default function ServicesPage() {
             {/* Step 01 */}
             <div className="process-step relative">
               <div className="absolute left-[-41px] md:left-[-73px] top-0 w-5 h-5 rounded-full bg-[#b2000a] border-4 border-[#FAF8F5]" />
-              <span className="font-lacroom text-2xl text-[#b2000a]">01</span>
-              <h4 className="font-lacroom text-xl text-[#2b2b2b] mt-2 mb-2 uppercase">Concept & Design Direction</h4>
-              <p className="font-urbanist text-sm text-[#6b6b6b] leading-relaxed max-w-xl font-light">
+              <span className="font-display text-2xl text-[#b2000a]">01</span>
+              <h4 className="font-display text-xl text-[#2b2b2b] mt-2 mb-2 uppercase">Concept & Design Direction</h4>
+              <p className="font-body text-sm text-[#6b6b6b] leading-relaxed max-w-xl font-light">
                 We sit down to understand your needs, curate a mood board, and draft spatial layouts to establish design direction.
               </p>
             </div>
@@ -328,9 +328,9 @@ export default function ServicesPage() {
             {/* Step 02 */}
             <div className="process-step relative">
               <div className="absolute left-[-41px] md:left-[-73px] top-0 w-5 h-5 rounded-full bg-[#b2000a] border-4 border-[#FAF8F5]" />
-              <span className="font-lacroom text-2xl text-[#b2000a]">02</span>
-              <h4 className="font-lacroom text-xl text-[#2b2b2b] mt-2 mb-2 uppercase">3D Visualization & Curation</h4>
-              <p className="font-urbanist text-sm text-[#6b6b6b] leading-relaxed max-w-xl font-light">
+              <span className="font-display text-2xl text-[#b2000a]">02</span>
+              <h4 className="font-display text-xl text-[#2b2b2b] mt-2 mb-2 uppercase">3D Visualization & Curation</h4>
+              <p className="font-body text-sm text-[#6b6b6b] leading-relaxed max-w-xl font-light">
                 Converting drafts into high-resolution 3D renders. We select exact textures, stones, and wood samples with you.
               </p>
             </div>
@@ -338,9 +338,9 @@ export default function ServicesPage() {
             {/* Step 03 */}
             <div className="process-step relative">
               <div className="absolute left-[-41px] md:left-[-73px] top-0 w-5 h-5 rounded-full bg-[#b2000a] border-4 border-[#FAF8F5]" />
-              <span className="font-lacroom text-2xl text-[#b2000a]">03</span>
-              <h4 className="font-lacroom text-xl text-[#2b2b2b] mt-2 mb-2 uppercase">Execution & Handover</h4>
-              <p className="font-urbanist text-sm text-[#6b6b6b] leading-relaxed max-w-xl font-light">
+              <span className="font-display text-2xl text-[#b2000a]">03</span>
+              <h4 className="font-display text-xl text-[#2b2b2b] mt-2 mb-2 uppercase">Execution & Handover</h4>
+              <p className="font-body text-sm text-[#6b6b6b] leading-relaxed max-w-xl font-light">
                 Our site engineers handle construction, authority approvals, and joinery fittings to ensure a seamless handover.
               </p>
             </div>
@@ -353,17 +353,17 @@ export default function ServicesPage() {
       {/* ── SECTION 4: Dubai Approvals & Compliance ── */}
       <section className="w-full py-16 md:py-28 bg-[#8B0012] text-white relative z-20">
         <div className="max-w-[1000px] w-full mx-auto px-6 text-center">
-          <span className="font-urbanist text-[0.8rem] font-bold text-white/70 tracking-[0.2em] uppercase mb-6 inline-block">
+          <span className="font-body text-[0.8rem] font-bold text-white/70 tracking-[0.2em] uppercase mb-6 inline-block">
             Compliance
           </span>
-          <h2 className="font-lacroom text-white text-[2rem] md:text-[3.2rem] mb-6 uppercase">
+          <h2 className="font-display text-white text-[2rem] md:text-[3.2rem] mb-6 uppercase">
             Dubai Authority Approvals
           </h2>
-          <p className="font-urbanist text-[#a1a1aa] leading-relaxed font-light mb-12 max-w-xl mx-auto text-sm">
+          <p className="font-body text-[#a1a1aa] leading-relaxed font-light mb-12 max-w-xl mx-auto text-sm">
             We handle complete compliance, drawing submissions, and approvals with all major Dubai construction and development authorities to guarantee civil security.
           </p>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 font-urbanist text-xs tracking-wider text-[#a1a1aa] font-semibold uppercase">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 font-body text-xs tracking-wider text-[#a1a1aa] font-semibold uppercase">
             <div className="bg-white/5 border border-white/10 p-6 rounded-2xl">Dubai Municipality</div>
             <div className="bg-white/5 border border-white/10 p-6 rounded-2xl">Civil Defence</div>
             <div className="bg-white/5 border border-white/10 p-6 rounded-2xl">DEWA</div>
@@ -375,7 +375,7 @@ export default function ServicesPage() {
       {/* ── SECTION 5: Start a Project CTA ── */}
       <section className="w-full py-16 md:py-28 bg-[#FAF8F5] text-center">
         <div className="max-w-xl mx-auto px-6">
-          <h3 className="font-lacroom text-[1.8rem] md:text-[2.6rem] text-[#2b2b2b] mb-8 uppercase">
+          <h3 className="font-display text-[1.8rem] md:text-[2.6rem] text-[#2b2b2b] mb-8 uppercase">
             Start Your Fit-Out Study
           </h3>
           
@@ -387,7 +387,7 @@ export default function ServicesPage() {
               color: '#FFFFFF',
               borderRadius: '50px',
               border: 'none',
-              fontFamily: "'Urbanist', sans-serif",
+              fontFamily: "'Tenor Sans', sans-serif",
               fontSize: '0.9rem',
               fontWeight: 600,
               letterSpacing: '0.08em',

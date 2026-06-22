@@ -95,7 +95,7 @@ const Navbar = () => {
       <div style={{ pointerEvents: 'auto' }}>
         <Link href="/" style={{ textDecoration: 'none' }}>
           <span
-            className="font-lacroom tracking-[0.06em] select-none"
+            className="font-display tracking-[0.06em] select-none"
             style={{
               fontSize: isMobile ? '1.1rem' : '1.5rem',
               fontWeight: 400,
@@ -109,7 +109,7 @@ const Navbar = () => {
       </div>
 
       {/* Navigation Links (Desktop) */}
-      <div className="hidden md:flex items-center gap-8 font-urbanist text-[0.78rem] tracking-[0.18em] font-semibold" style={{ pointerEvents: 'auto' }}>
+      <div className="hidden md:flex items-center gap-8 font-body text-[0.78rem] tracking-[0.18em] font-semibold" style={{ pointerEvents: 'auto' }}>
         <Link href="/projects" className="hover:text-[#b2000a] transition-colors" style={{ color: isHomePage || scrolled ? '#ffffff' : '#2b2b2b', transition: 'color 0.4s ease' }}>PROJECTS</Link>
         <Link href="/services" className="hover:text-[#b2000a] transition-colors" style={{ color: isHomePage || scrolled ? '#ffffff' : '#2b2b2b', transition: 'color 0.4s ease' }}>SERVICES</Link>
         <Link href="/about" className="hover:text-[#b2000a] transition-colors" style={{ color: isHomePage || scrolled ? '#ffffff' : '#2b2b2b', transition: 'color 0.4s ease' }}>ABOUT US</Link>
@@ -128,7 +128,7 @@ const Navbar = () => {
             color: '#ffffff',
             padding: isMobile ? '0.5rem 1rem' : '0.65rem 1.4rem',
             borderRadius: '9999px',
-            fontFamily: "'Urbanist', sans-serif",
+            fontFamily: "'Tenor Sans', sans-serif",
             fontSize: isMobile ? '0.8rem' : '1rem',
             fontWeight: 600,
             textDecoration: 'none',

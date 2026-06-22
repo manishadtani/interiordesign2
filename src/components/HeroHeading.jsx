@@ -73,7 +73,7 @@ const HeroHeading = () => {
       {/* Main Heading Group */}
       <div className="w-full flex flex-col items-center pointer-events-none mt-4 text-center px-4">
         <h1
-          className="font-lacroom"
+          className="font-display"
           style={{
             fontWeight: 400,
             fontSize: isMobile ? 'clamp(2.2rem, 8vw, 4rem)' : 'clamp(4.5rem, 7.5vw, 7.5rem)',
@@ -87,7 +87,7 @@ const HeroHeading = () => {
           CREATE
         </h1>
         <h1
-          className="font-lacroom"
+          className="font-display"
           style={{
             fontWeight: 400,
             fontSize: isMobile ? 'clamp(2.2rem, 8vw, 4rem)' : 'clamp(4.5rem, 7.5vw, 7.5rem)',
@@ -106,7 +106,7 @@ const HeroHeading = () => {
       {/* Bottom Content Area */}
       <div className="flex flex-col items-center w-full pointer-events-none relative px-4">
         <p
-          className="text-center mx-auto font-urbanist"
+          className="text-center mx-auto font-body"
           style={{
             fontSize: isMobile ? '0.95rem' : '1.2rem',
             lineHeight: 1.5,
@@ -124,7 +124,7 @@ const HeroHeading = () => {
             pointerEvents: 'auto',
             backgroundColor: '#b2000a',
             color: '#fff',
-            fontFamily: "'Urbanist', sans-serif",
+            fontFamily: "'Tenor Sans', sans-serif",
             fontSize: '0.9rem',
             fontWeight: 600,
             letterSpacing: '0.05em',

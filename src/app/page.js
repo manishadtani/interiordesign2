@@ -6,7 +6,6 @@ import LoadingScreen from '../components/LoadingScreen';
 import CinematicHero from '../components/CinematicHero';
 import AboutUs from '../components/AboutUs';
 import BeforeAfter from '../components/BeforeAfter';
-import ScrollWalkthrough from '../components/ScrollWalkthrough';
 import DesignStyles from '../components/DesignStyles';
 import ServicesSection from '../components/ServicesSection';
 import ProjectsCarousel from '../components/ProjectsCarousel';
@@ -182,8 +181,6 @@ export default function Home() {
         afterImage="/images/Minimalist1.png" 
         title="MINIMALIST"
       />
-
-      <ScrollWalkthrough /> 
 
       <DesignStyles />
 
